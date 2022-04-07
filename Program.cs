@@ -23,9 +23,11 @@ namespace Day24_Person_data_management
             data.CalculateAverageAge();
 
             Console.WriteLine(" 4] Searching for value in list :");
-            Console.Write("\n Enter a value to search : ");
+            Console.Write("\n Enter a value to search :");
             string value = Console.ReadLine();
             data.SearchValue(value);
+            Console.WriteLine(" 6] Skip record from the list for age is less than 60");
+            data.SkipRecords();
         }
     }
 }
